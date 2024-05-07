@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E8F5E9"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Lucky Number"
+        android:id="@+id/header_title"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:maxLines="1"
+        android:layout_margin="10dp"
+        android:layout_marginTop="50dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_title"
+        android:hint="Enter Your Name"
+        android:textAlignment="center"
+        android:textColor="#3D5AFE"
+        android:textColorHint="#FF7043"
+        android:id="@+id/name"
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:text="Get Your Lucky Number"
+        android:background="#FFEA00"
+        android:textAlignment="center"
+        android:textColor="#F50057"
+        android:id="@+id/get_number"
+        />
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/get_number"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_launcher_foreground"
+        />
+
+
+
+</RelativeLayout>
