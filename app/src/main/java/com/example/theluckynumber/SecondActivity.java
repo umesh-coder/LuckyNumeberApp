@@ -47,6 +47,12 @@ public class SecondActivity extends AppCompatActivity {
 
     }
 
+    /**
+     *  shares the data frpm 
+     * @param userName
+     * @param generatedNumber
+     */
+
     public void shareData(String userName,int generatedNumber) {
     Intent i = new Intent(Intent.ACTION_SEND);
     i.setType("text/plain");
